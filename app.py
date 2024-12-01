@@ -2,11 +2,7 @@ import streamlit as st
 from datetime import datetime
 import pandas as pd
 from sqlalchemy import create_engine, text
-import sqlite3
 
-#SQLite
-conn = sqlite3.connect('kidney_matching.db')
-cursor = conn.cursor()
 # Create SQL
 engine = create_engine("sqlite:///kidney_matching.db")
 
